@@ -1318,6 +1318,25 @@ body.lb-open { overflow: hidden; }
 .esp-text h1 span { color: var(--yellow); display: block; }
 @media (max-width: 600px) { .esp-text h1 { font-size: 52px; } }
 
+/* =========================
+   CORRECCIÓN CELULAR: la barra de info va DEBAJO del texto de portada
+========================= */
+@media (max-width: 850px) {
+  .site-header {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .hero-content {
+    margin: 110px auto 30px;
+  }
+  .hero-info {
+    width: 100%;
+    position: relative;
+    z-index: 5;
+  }
+}
+
 </style>
 </head>
 
